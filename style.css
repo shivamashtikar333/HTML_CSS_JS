@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.container {
+  background-color: pink;
+  height: 200vh;
+}
+
+.div1 {
+  height: 100vh;
+  overflow-y: hidden;
+  margin-bottom: 50px;
+}
+
+.div1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.div2 {
+  height: 50vh;
+  background-color: salmon;
+  width: 98%;
+  border-radius: 50px;
+  margin-left: 25px;
+  position: absolute; /* Make div2 absolutely positioned */
+  top: 100vh; /* Start it below .div1 */
+  z-index: 2;
+}
+
+.text {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(35);
+}
